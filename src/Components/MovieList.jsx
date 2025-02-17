@@ -24,7 +24,7 @@ const MovieCard = ({ movie }) => {
 const MovieList = () => {
   const [movies, setMovies] = useState([]);
   
-  // Hardcoded API key for testing
+ 
   const API_KEY = '88afb9ebe92c8f81bb0430a439004847';  // Your actual API key
   const API_URL = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc`;
 
@@ -39,7 +39,7 @@ const MovieList = () => {
     };
 
     fetchMovies();
-  }, []);  // Empty dependency array ensures the code runs only once when the component mounts
+  }, []);  
 
   return (
     <div className="container">
